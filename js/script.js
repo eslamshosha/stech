@@ -68,54 +68,59 @@ $(document).ready(function () {
     },
   });
   // for counter //
+  const sectionExists =
+    document.getElementsByClassName("counter-cont").length > 0;
 
-  var a = 0;
-  function countFunction() {
-    $(".counter-num").each(function () {
-      var $this = $(this),
-        countTo = $this.attr("data-count");
-      $({
-        countNum: $this.text(),
-      }).animate(
-        {
-          countNum: countTo,
-        },
+  if (sectionExists) {
+    var a = 0;
+    function countFunction() {
+      $(".counter-num").each(function () {
+        var $this = $(this),
+          countTo = $this.attr("data-count");
+        $({
+          countNum: $this.text(),
+        }).animate(
+          {
+            countNum: countTo,
+          },
 
-        {
-          duration: 2000,
-          easing: "swing",
-          step: function () {
-            if (this.countNum < 10) {
-              $this.text("0" + Math.floor(this.countNum));
-            } else {
-              $this.text(Math.floor(this.countNum));
-            }
-          },
-          complete: function () {
-            if (this.countNum < 10) {
-              $this.text("0" + this.countNum);
-            } else {
-              $this.text(this.countNum);
-            }
-            //alert('finished');
-          },
-        }
-      );
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function () {
+              if (this.countNum < 10) {
+                $this.text("0" + Math.floor(this.countNum));
+              } else {
+                $this.text(Math.floor(this.countNum));
+              }
+            },
+            complete: function () {
+              if (this.countNum < 10) {
+                $this.text("0" + this.countNum);
+              } else {
+                $this.text(this.countNum);
+              }
+              //alert('finished');
+            },
+          }
+        );
+      });
+      a = 1;
+    }
+    if ($(window).width() <= 767) {
+      window.onload(countFunction());
+    }
+    $(window).scroll(function () {
+      var oTop = $(".counter-cont").offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        countFunction();
+      }
     });
-    a = 1;
-  }
-  if ($(window).width() <= 767) {
-    window.onload(countFunction());
-  }
-  $(window).scroll(function () {
     var oTop = $(".counter-cont").offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
       countFunction();
     }
-  });
-  var oTop = $(".counter-cont").offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    countFunction();
+  } else {
   }
 
   // end counter //
