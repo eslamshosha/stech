@@ -65,7 +65,7 @@
     </div>
     <!-- preloader -->
     <!-- header section -->
-    <header>
+    <header class="header">
       <div class="top-header">
         <div class="nav-header">
           <figure class="img-logo">
@@ -87,25 +87,25 @@
             <div class="nav-head"></div>
             <ul class="big-menu list-unstyled">
               <li>
-                <a href="#"> الرئيسية </a>
+                <a href="#" role="button" data-href="#home"> الرئيسية </a>
               </li>
               <li>
-                <a href="#"> من نحن </a>
+                <a href="#" role="button" data-href="#about"> من نحن </a>
               </li>
               <li>
-                <a href="#"> خدمتنا </a>
+                <a href="#" role="button" data-href="#services"> خدمتنا </a>
               </li>
               <li>
-                <a href="#"> أعمالنا</a>
+                <a href="#" role="button" data-href="#gallery"> أعمالنا</a>
               </li>
               <li>
-                <a href="#"> آراء العملاء</a>
+                <a href="#" role="button" data-href="#testimonial"> آراء العملاء</a>
               </li>
               <li>
-                <a href="#"> شركاء النجاح </a>
+                <a href="#" role="button" data-href="#partner"> شركاء النجاح </a>
               </li>
               <li>
-                <a href="form.html"> اتصل بنا</a>
+                <a href="#" role="button" data-href="#footer"> اتصل بنا</a>
               </li>
               <li>
                 <a href="index-en.html"> English</a>
@@ -127,7 +127,7 @@
     </header>
     <!-- header section     -->
     <!-- main slider -->
-    <main class="main-slider">
+    <main class="main-slider" id="home">
       <div class="main-cont">
         <div class="main-info">
           <h1 class="main-title">نحول وحدتك إلى قطعة فنية بلمسة عصرية</h1>
@@ -188,7 +188,7 @@
     </main>
     <!-- main slider -->
     <!-- section about-us -->
-    <section class="about-us-section">
+    <section class="about-us-section" id="about">
       <div class="container">
         <div class="about-us-cont">
           <h2 class="about-us-head wow fadeInDown" wow-data-delay="5s">
@@ -251,7 +251,7 @@
     </section>
     <!-- section about-us -->
     <!-- services-section -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="services-container">
           <h2 class="services-head wow fadeInDown" wow-data-delay="5s">
@@ -259,7 +259,7 @@
           </h2>
           <div class="services-cont">
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/01.webp"
@@ -268,10 +268,10 @@
                   />
                 </figure>
                 <span class="services-span"> التشطيب الداخلي</span>
-              </a>
+              </div>
             </div>
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/02.webp"
@@ -280,10 +280,10 @@
                   />
                 </figure>
                 <span class="services-span"> التأثيث والفرش</span>
-              </a>
+              </div>
             </div>
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/03.webp"
@@ -292,10 +292,10 @@
                   />
                 </figure>
                 <span class="services-span"> المنشآت الذكية</span>
-              </a>
+              </div>
             </div>
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/04.webp"
@@ -304,10 +304,10 @@
                   />
                 </figure>
                 <span class="services-span"> مقاولات البناء</span>
-              </a>
+              </div>
             </div>
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/05.webp"
@@ -316,10 +316,10 @@
                   />
                 </figure>
                 <span class="services-span"> مقاولات البنية التحتية</span>
-              </a>
+              </div>
             </div>
             <div class="services-box">
-              <a href="#" class="services-ancor">
+              <div class="services-div">
                 <figure class="services-img">
                   <img
                     src="images/services/06.webp"
@@ -328,7 +328,7 @@
                   />
                 </figure>
                 <span class="services-span"> الصيانة والترميم</span>
-              </a>
+              </div>
             </div>
           </div>
           <div class="btn-cont">
@@ -342,7 +342,7 @@
     </section>
     <!-- services-section -->
     <!-- gallery section -->
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery">
       <div class="container">
         <h2 class="section-head wow fadeInDown" wow-data-delay="5s">
           معرض أعمالنا
@@ -724,7 +724,7 @@
     </section>
     <!-- gallery section -->
     <!-- testimonials section -->
-    <div class="testimonials-section">
+    <div class="testimonials-section" id="testimonial">
       <div class="container">
         <h2 class="section-head">آراء العملاء</h2>
         <div class="testimonials-slider">
@@ -812,7 +812,7 @@
     </section>
     <!-- work-section -->
     <!-- partner section -->
-    <div class="partner-section">
+    <div class="partner-section" id="partner">
       <div class="container">
         <h2 class="section-head">شركاء النجاح</h2>
         <div class="partner-slider">
@@ -898,7 +898,7 @@
     </div>
     <!-- partner section -->
     <!-- footer section -->
-    <footer>
+    <footer id="footer">
       <div class="container">
         <h2 class="work-head wow fadeInDown" wow-data-delay="5s">
           ترغب بالعمل معنا؟
