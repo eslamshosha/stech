@@ -227,7 +227,7 @@ header {
   background-position: 100% 0;
 }
 html[dir="ltr"] .contact-link {
-  font-size: 13px;
+  font-size: 12px;
 }
 /*                          header section                     */
 /*           swiper section                     */
@@ -521,9 +521,10 @@ html[dir="ltr"] .main-slider .swiper-btn.swiper-btn-prev {
     justify-content: center;
   }
   .first-btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
     font-size: 15px;
+    margin-inline-end: 15px;
   }
   .second-btn {
     width: 190px;
@@ -532,7 +533,7 @@ html[dir="ltr"] .main-slider .swiper-btn.swiper-btn-prev {
   }
   html[dir="ltr"] .first-btn,
   html[dir="ltr"] .second-btn {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .main-slider .swiper-pagination .swiper-pagination-bullet:hover {
@@ -1860,10 +1861,13 @@ select {
     padding: 10px 20px;
   }
   .contact-link {
-    width: 120px;
+    width: 122px;
     height: 35px;
     font-size: 12px;
     margin: 0;
+  }
+  html[dir="ltr"] .contact-link {
+    font-size: 10px;
   }
   .show-icons .menu-bars {
     position: relative;
@@ -1990,22 +1994,20 @@ select {
   inset-inline-start: 20px;
   display: none;
   z-index: 10;
-  text-decoration: none !important;
-}
-.arrow-top i {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.302);
   font-size: 20px;
+  border: none;
+  outline: none !important;
   color: var(--white-color);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
 }
-.arrow-top i:hover {
+.arrow-top:hover {
   background-color: var(--main-hover);
   color: var(--white-color);
 }
