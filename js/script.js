@@ -25,16 +25,20 @@ $(document).ready(function () {
     });
   }
   //fixed nav
+  $stickyLogo = $(".img-logo");
   $stickyNav = $(".top-header");
   $(window).on("scroll load", function () {
     var scroll = $(window).scrollTop();
     if (scroll >= 200) {
       $stickyNav.addClass("fixed-nav", 500);
+      $stickyLogo.fadeOut(300);
     } else {
       $stickyNav.removeClass("fixed-nav", 500);
+      $stickyLogo.fadeIn(300);
     }
     if (scroll == 0) {
       $stickyNav.removeClass("fixed-nav", 500);
+      $stickyLogo.fadeIn(300);
     }
   });
   var $stickyheader = $("header");

@@ -159,7 +159,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .fixed-nav .nav-header {
-  padding: 15px 40px;
+  padding: 10px 40px;
 }
 .fixed-header {
   position: fixed;
@@ -180,11 +180,12 @@ header {
   display: flex;
   align-items: center;
 }
-.fixed-nav .img-logo {
+/* .fixed-nav .img-logo {
   display: none;
-}
+} */
 .logo-sm img {
   max-width: 40px;
+  transition: all .3s ease-in-out;
 }
 .nav-header figure {
   margin: 0;
@@ -215,17 +216,17 @@ header {
   );
   background-image: -o-linear-gradient(
     left,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-image: linear-gradient(
     to right,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
@@ -239,7 +240,7 @@ header {
 }
 
 html[dir="ltr"] .contact-link {
-  font-size: 12px;
+  font-size: 16px;
 }
 /*                          header section                     */
 /*           swiper section                     */
@@ -317,17 +318,17 @@ html[dir="ltr"] .main-slider:after {
   );
   background-image: -o-linear-gradient(
     left,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-image: linear-gradient(
     to right,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-size: 300% 100%;
   margin-inline-end: 20px;
@@ -361,7 +362,10 @@ html[dir="ltr"] .main-slider:after {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
+html[dir="ltr"] .first-btn,
+html[dir="ltr"] .second-btn{
+  font-size: 16px;
+}
 @media (hover: hover) {
   .second-btn:hover {
     text-decoration: none;
@@ -500,7 +504,7 @@ html[dir="ltr"] .main-slider .swiper-btn.swiper-btn-prev {
     padding: 60px 20px 20px;
   }
   .main-title {
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -513,7 +517,7 @@ html[dir="ltr"] .main-slider .swiper-btn.swiper-btn-prev {
     height: 50px;
     font-size: 15px;
     margin-inline-end: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .second-btn {
     width: 300px;
@@ -607,21 +611,24 @@ html[dir="ltr"] .main-slider .swiper-btn.swiper-btn-prev {
   );
   background-image: -o-linear-gradient(
     left,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-image: linear-gradient(
     to right,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   margin: 0 auto;
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
+}
+html[dir="ltr"] .about-us-link{
+  font-size: 16px;
 }
 @media (hover: hover) {
   .about-us-link:hover {
@@ -1059,7 +1066,7 @@ html[dir="ltr"] .testimonials-section::after {
   margin-bottom: 20px;
 }
 .testimonials-rate i.rated-star {
-  color: var(--main-hover);
+  color: #ffc107;
 }
 .testimonials-pargh {
   font-weight: 300;
@@ -1579,17 +1586,17 @@ textarea.form-input {
   );
   background-image: -o-linear-gradient(
     left,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-image: linear-gradient(
     to right,
-    rgb(89, 135, 185),
+    rgb(89, 35, 185),
     rgb(154, 33, 160),
     rgb(154, 33, 160),
-    rgb(89, 135, 185)
+    rgb(89, 35, 185)
   );
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
@@ -1683,7 +1690,7 @@ select {
 .select2-container .select2-search--dropdown .select2-search__field {
   width: 100%;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 0;
   background-color: #341677;
   border: 2px solid var(--main-hover);
   font-size: 14px;
@@ -1967,7 +1974,7 @@ select {
     margin: 0;
   }
   .big-menu li {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .chevron-down {
     line-height: unset;
@@ -1976,8 +1983,8 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
   }
   /*                    menu in phone size                      */
 }
