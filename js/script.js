@@ -240,3 +240,13 @@ $(document).ready(function () {
     });
   }
 });
+
+//mixitup
+// var mixer = mixitup('.container');
+var containerEl = document.querySelector("#mix-container");
+
+var mixer = mixitup(containerEl, {
+  animation: {
+    effects: "fade scale(0.5)",
+  },
+});

@@ -851,15 +851,14 @@ html[dir="ltr"] .gallery-section:after {
   color: var(--main-color);
   margin-bottom: 40px;
 }
-.nav-tabs {
-  border: none;
+.mix-btn-cont {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 35px;
 }
-.nav-tabs .nav-link {
+.mix-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: unset !important;
@@ -875,10 +874,9 @@ html[dir="ltr"] .gallery-section:after {
   transition: all 0.3s ease-in-out;
   text-transform: capitalize;
 }
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link.active:focus,
-.nav-tabs .nav-link.active:hover {
+.mix-btn:hover,
+.mixitup-control-active,
+.mix-btn:focus {
   border: none;
   color: var(--main-hover);
   background-color: transparent;
@@ -887,6 +885,7 @@ html[dir="ltr"] .gallery-section:after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
+  margin-bottom: 15px;
 }
 .gallery:nth-of-type(2),
 .gallery:nth-of-type(9n + 2) {
@@ -994,13 +993,13 @@ html[dir="ltr"] .gallery-section:after {
     font-size: 24px;
     margin-bottom: 45px;
   }
-  .nav-tabs {
+  .mix-btn-cont {
     flex-wrap: nowrap;
     overflow-x: scroll;
     padding-bottom: 10px;
     justify-content: flex-start;
   }
-  .nav-tabs .nav-link {
+  .mix-btn {
     white-space: nowrap;
     font-size: 14px;
     margin-inline-end: 15px;
