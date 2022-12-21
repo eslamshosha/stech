@@ -198,6 +198,10 @@ $(document).ready(function () {
   //////////** scroll to section **//////////
   $(document).on("scroll", onScroll);
   $('.big-menu a[data-href^="#"]').on("click", function (e) {
+
+    $(".navgition").removeClass("reset-left");
+    $(".menu-bars").removeClass("open-bars");
+    
     e.preventDefault();
     $(document).off("scroll");
 
